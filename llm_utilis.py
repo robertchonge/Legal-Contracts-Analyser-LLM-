@@ -1,6 +1,6 @@
 import openai
 
-openai.api_key =get.env('OPENAI_API_KEY')
+openai.api_key =settings.OPENAI_API_KEY
 
 def query_llm(prompt, contract_text):
     response = openai.ChatCompletion.create(
